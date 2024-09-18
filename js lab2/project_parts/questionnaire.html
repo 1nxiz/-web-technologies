@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Анкета</title>
+</head>
+<body>
+    <h1>Анкета</h1>
+    <form action="" method="post" enctype="multipart/form-data">
+        <fieldset>
+            <legend>Особиста інформація</legend>
+            
+            <label for="name">Ім'я:</label>
+            <input type="text" id="name" name="name" required placeholder="Введіть ваше ім'я" tabindex="1">
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required placeholder="example@email.com" autocomplete="off" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" tabindex="2">
+            
+            <label for="password">Пароль:</label>
+            <input type="password" id="password" name="password" required placeholder="Введіть пароль" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}" tabindex="3">
+            
+            <label for="tel">Телефон:</label>
+            <input type="tel" id="tel" name="tel" placeholder="+380XXXXXXXXX" pattern="\+380\d{9}" tabindex="4">
+            
+            <label for="birthdate">Дата народження:</label>
+            <input type="date" id="birthdate" name="birthdate" tabindex="5">
+        </fieldset>
+        
+        <fieldset>
+            <legend>Додаткова інформація</legend>
+            
+            <label for="comments">Коментарі:</label>
+            <textarea id="comments" name="comments" placeholder="Введіть ваші коментарі тут" tabindex="6"></textarea>
+            
+            <p>Стать:</p>
+            <input type="radio" id="male" name="gender" value="male" tabindex="7">
+            <label for="male">Чоловіча</label>
+            <input type="radio" id="female" name="gender" value="female" tabindex="8">
+            <label for="female">Жіноча</label>
+            <input type="radio" id="other" name="gender" value="other" tabindex="9">
+            <label for="other">Інше</label>
+            
+            <p>Освіта:</p>
+            <input type="radio" id="school" name="education" value="school" tabindex="10">
+            <label for="school">Середня</label>
+            <input type="radio" id="bachelor" name="education" value="bachelor" tabindex="11">
+            <label for="bachelor">Бакалавр</label>
+            <input type="radio" id="master" name="education" value="master" checked tabindex="12">
+            <label for="master">Магістр</label>
+            
+            <p>Інтереси:</p>
+            <input type="checkbox" id="sport" name="interests" value="sport" tabindex="13">
+            <label for="sport">Спорт</label>
+            <input type="checkbox" id="music" name="interests" value="music" tabindex="14">
+            <label for="music">Музика</label>
+            <input type="checkbox" id="art" name="interests" value="art" tabindex="15">
+            <label for="art">Мистецтво</label>
+            <input type="checkbox" id="tech" name="interests" value="tech" tabindex="16">
+            <label for="tech">Технології</label>
+        </fieldset>
+        
+        <fieldset>
+            <legend>Вибір опцій</legend>
+            
+            <label for="country">Країна:</label>
+            <select id="country" name="country" tabindex="17">
+                <option value="">Виберіть країну</option>
+                <option value="ua">Україна</option>
+                <option value="pl" selected>Польща</option>
+                <option value="de">Німеччина</option>
+                <option value="fr">Франція</option>
+                <option value="uk">Велика Британія</option>
+            </select>
+            
+            <label for="languages">Мови, якими володієте:</label>
+            <select id="languages" name="languages" multiple tabindex="18">
+                <option value="ua">Українська</option>
+                <option value="en">Англійська</option>
+                <option value="de">Німецька</option>
+                <option value="fr">Французька</option>
+                <option value="pl">Польська</option>
+                <option value="es">Іспанська</option>
+            </select>
+            
+            <label for="profession">Професія:</label>
+            <select id="profession" name="profession" tabindex="19">
+                <optgroup label="IT">
+                    <option value="developer">Розробник</option>
+                    <option value="designer">Дизайнер</option>
+                    <option value="manager">Менеджер проектів</option>
+                </optgroup>
+                <optgroup label="Медицина">
+                    <option value="doctor">Лікар</option>
+                    <option value="nurse">Медсестра</option>
+                    <option value="pharmacist">Фармацевт</option>
+                </optgroup>
+                <optgroup label="Освіта">
+                    <option value="teacher">Вчитель</option>
+                    <option value="professor">Професор</option>
+                    <option value="tutor">Репетитор</option>
+                </optgroup>
+                <optgroup label="Інше">
+                    <option value="engineer">Інженер</option>
+                    <option value="accountant">Бухгалтер</option>
+                    <option value="lawyer">Юрист</option>
+                </optgroup>
+            </select>
+            
+            <label for="city">Місто:</label>
+            <input list="cities" id="city" name="city" tabindex="20">
+            <datalist id="cities">
+                <option value="Київ">
+                <option value="Львів">
+                <option value="Харків">
+                <option value="Одеса">
+                <option value="Дніпро">
+            </datalist>
+        </fieldset>
+        
+        <fieldset>
+            <legend>Завантаження файлів</legend>
+            <label for="audio">Завантажте аудіо файли:</label>
+            <input type="file" id="audio" name="audio" accept="audio/*" multiple tabindex="21">
+        </fieldset>
+        
+        <button type="submit" tabindex="22">Відправити</button>
+        <button type="reset" tabindex="23">Скинути</button>
+    </form>
+
+    <p><a href="index.html">Повернутись на головну</a></p>
+</body>
+</html>
