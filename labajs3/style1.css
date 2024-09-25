@@ -1,0 +1,49 @@
+body {
+    text-align: center; 
+
+}
+
+h1{
+    text-align: center;
+    color: red;
+}
+h2{
+    text-align: center;
+    font-style: italic;
+}
+
+.ingredient {
+    font-size: 18px; 
+}
+
+.bold {
+    font-weight: bold; 
+}
+
+.del {
+    text-decoration: line-through; 
+}
+
+.mark {
+    background-color: yellow; 
+}
+
+.break {
+    display: block; 
+    margin: 10px 0;
+}
+
+hr {
+    background-color: green; 
+    height: 4px; 
+    width: 40%; 
+    
+}
+
+.note {
+    margin-top: 20px; 
+}
+
+.italic {
+    font-style: italic; 
+}
