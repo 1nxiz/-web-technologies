@@ -1,0 +1,71 @@
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+thead th {
+    padding: 15px;
+    font-size: 18px;
+    color: white;
+    font-weight: bold;
+    background: radial-gradient(circle, #d9a1e3, #7a1f79); 
+}
+
+thead th:nth-child(2) {
+    background: radial-gradient(circle, #c68dd7, #5a1c6e); 
+}
+
+thead th:nth-child(3) {
+    background: radial-gradient(circle, #d2b5e6, #6d3a8b);
+}
+
+thead th:nth-child(4) {
+    background: radial-gradient(circle, #e3c6e8, #7d4b98);
+}
+
+thead th:nth-child(5) {
+    background: radial-gradient(circle, #a65cb5, #5e1e8c);
+}
+
+tbody td {
+    padding: 15px;
+    background: radial-gradient(circle, #560b55, #4e0e4a); 
+    color: white;
+}
+
+tbody tr:nth-child(2) td {
+    background: radial-gradient(circle, #870d85, #a81a9f);  
+}
+
+tbody tr:nth-child(4) td {
+    background: radial-gradient(circle, #870d85, #a81a9f);
+}
+
+tbody td:nth-child(1) {
+    background: radial-gradient(circle, #870d85, #a81a9f);; 
+    color: white;
+    font-weight: bold;
+    text-align: left;
+    padding-left: 10px;
+}
+
+tbody td:nth-child(2),
+tbody td:nth-child(3),
+tbody td:nth-child(4),
+tbody td:nth-child(5) {
+    font-size: 18px;
+}
+
+tbody td:empty {
+    background-color: #f9f0f0; 
+}
+
+tbody td {
+    border: 1px solid #ccc;
+}
