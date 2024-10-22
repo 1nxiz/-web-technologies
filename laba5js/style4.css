@@ -1,0 +1,101 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    }
+
+.wrapper{
+    width: 1140px;
+    padding: 20px;
+    margin: auto;
+    }
+
+header{
+    overflow: hidden;
+    background-color: #d2d2d2;
+}
+
+.logo img {
+    width: 70px;
+    height: 70px;
+    margin: 5px;
+    border-radius: 50%;
+    position: absolute;
+    
+ }
+
+
+ ul{
+    list-style: none;
+    display: flex;
+    float: right;
+ }
+
+ li {
+  margin: 15px; 
+  padding: 5px;
+
+ }
+
+ li a {
+    display: inline-block;
+    padding: 10px;
+    background: #ff6201;
+    text-decoration: none;
+ }
+
+.mainblock{
+    display: inline-block;
+}
+
+.mainblock h1{
+    font-size: 20px;
+    padding: 20px 0px 0px 10px ;
+}
+
+.mainblock p{
+    padding: 0px 0px 50px 10px ;
+}
+
+.mainblock li{
+   float: left;
+   margin: 30px;
+   list-style-type: none;
+}
+
+.photo{
+    width: 300px;
+    padding: 15px 0px 15px 0px;
+}
+
+.shadow-1{
+    box-shadow: 0 0 0 1px green, -7px -7px 5px -0px green;
+    padding: 0px; 
+}
+
+.shadow-2{
+    box-shadow: 0 0 0 1px green, -0px -0px 15px 5px green , 0px 0px 15px 5px green;
+    padding: 0px; 
+}
+
+.shadow-3{
+    box-shadow: 0 0 0 1px green, 0.50em 0.50em  5px rgba(12, 207, 12, 0.407);
+    padding: 0px; 
+}
+
+.shadow-4{
+    box-shadow: 0 0 0 1px green, 0px  0px  45px 20px rgba(12, 207, 12, 0.461);
+    border-radius: 20px;
+    padding: 0px; 
+}
+
+.shadow-5{
+    box-shadow:  0px 7px 0px 0px rgb(254, 159, 57) ,  0px -7px 0px 0px green,inset  7px 0px 0px 0px rgb(7, 17, 205),inset -7px 0px 0px 0px rgb(239, 9, 9);
+    padding: 7px; 
+}
+
+.shadow-6{
+    box-shadow: 0 0 0 1px green, 0px -12px 0px -5px rgb(215, 174, 11) , 0px 12px 0px -5px rgb(28, 158, 3);
+    padding: 0px; 
+}
+

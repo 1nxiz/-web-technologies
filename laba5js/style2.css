@@ -1,0 +1,132 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    }
+
+.wrapper{
+    width: 1140px;
+    padding: 20px;
+    margin: auto;
+    }
+
+header{
+    overflow: hidden;
+    background-color: #d2d2d2;
+}
+
+.logo img {
+    width: 70px;
+    height: 70px;
+    margin: 5px;
+    border-radius: 50%;
+    position: absolute;
+    
+ }
+
+
+ ul{
+    list-style: none;
+    display: flex;
+    float: right;
+ }
+
+ li {
+  margin: 15px; 
+  padding: 5px;
+
+ }
+
+ li a {
+    display: inline-block;
+    padding: 10px;
+    background: #ff6201;
+    text-decoration: none;
+ }
+
+
+ .blocks-container {
+   display: inline-block;
+
+
+}
+
+.blocks-container li {
+ position: relative;
+   float: left;
+   margin: 20px;
+   list-style-type: none;
+   width: 300px;
+   height: 250px;
+   
+}
+
+p, h3 {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+p {
+    font-size: 12px;
+}
+
+.block-1, .block-2, .block-3 {
+    border: 5px solid rgb(0, 255, 13);
+}
+
+.block-1 {
+    border-radius: 20px;
+    clear: left;
+}
+
+.block-2 {
+    border-radius: 70px 0px;
+}
+
+.block-3 {
+    border-radius: 50px 150px;
+}
+
+.block-4, .block-5, .block-6 {
+    border: 15px solid;
+}
+
+.block-4 {
+    border-color: rgb(0, 165, 38) rgb(76, 255, 56);
+    border-radius: 200px / 50px;
+    clear: left;
+}
+
+.block-5 {
+    border-color: rgb(0, 165, 38) rgb(76, 255, 56);
+    border-radius: 250px 100px / 50px 25px;
+}
+
+.block-6 {
+    border-color: rgb(0, 165, 38) rgb(76, 255, 56);
+    border-bottom-right-radius: 100%;
+}
+
+.block-7 {
+    border: double #ffbd67 15px;
+    border-image: url("img/photo_2024-10-02_13-48-23.jpg") 18 18 18 18;
+}
+.block-8 {
+    border: double #ffbd67 15px;
+    border-image: url("img/photo_2024-10-02_13-48-23.jpg") 15 / 15px round;
+}
+.block-9 {
+    border: double #ffbd67 15px;
+    border-image: url("img/photo_2024-10-02_13-48-23.jpg") 27 / 15px round;
+}
+.block-10{
+    border: double #ffbd67 15px;
+    border-image: url("img/photo_2024-10-02_13-48-41.jpg") 20 10 / 20px stretch;
+}
+.block-11 {
+    border: double #ffbd67 15px;
+    border-image: url("img/photo_2024-10-02_13-48-41.jpg") 15 15 / 20px round;
+}
+.block-12 {
+    border: double #ffbd67 15px;
+    border-image: url("img/photo_2024-10-02_13-48-41.jpg") 5 17 / 20px stretch;
+}

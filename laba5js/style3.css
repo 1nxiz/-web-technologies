@@ -1,0 +1,98 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    }
+
+.wrapper{
+    width: 1140px;
+    padding: 20px;
+    margin: auto;
+    }
+
+header{
+    overflow: hidden;
+    background-color: #d2d2d2;
+}
+
+.logo img {
+    width: 70px;
+    height: 70px;
+    margin: 5px;
+    border-radius: 50%;
+    position: absolute;
+    
+ }
+
+
+ ul{
+    list-style: none;
+    display: flex;
+    float: right;
+ }
+
+ li {
+  margin: 15px; 
+  padding: 5px;
+
+ }
+
+ li a {
+    display: inline-block;
+    padding: 10px;
+    background: #ff6201;
+    text-decoration: none;
+ }
+
+ h1 {
+    color: white;
+    text-align: center;
+    padding: 0px 0px 10px 0px;
+    font-size: 20px;
+ }
+
+.block-13{
+    background-color: rgb(108, 25, 25);
+    border-radius: 55px;
+    margin: 50px;
+    padding: 20px;
+    text-align: left;
+    color: white;
+
+}
+
+.block-14{
+    background-color: rgba(131, 72, 72, 0.867);
+    border-radius: 55px;
+    margin: 50px;
+    padding: 20px;
+    text-align: left;
+    color: white;   
+}
+
+.block-15{
+    background-color: rgb(147, 46, 46);
+    border-radius: 50px;
+    width: 350px;
+    margin: 50px;
+    padding: 20px;
+    text-align: left;
+    color: white;
+}
+
+.block-16{
+    background-color: rgb(147, 46, 46);
+    border-radius: 50px;
+    width: 350px;
+    margin: 50px;
+    padding: 20px;
+    text-align: left;
+    color: white;
+}
+
+.block-14 .block-15{
+    float: left;
+}
+.block-14 .block-16{
+    float: right;
+}
