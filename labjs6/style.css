@@ -1,0 +1,48 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+.container {
+    position: relative;
+    width: 400px;
+    height: 200px;
+    margin: 50px auto;
+}
+
+.block {
+    margin: auto;
+    border: 2px solid black;
+    padding: 10px;
+    color: white;
+    text-align: center;
+    line-height: 70px;
+}
+
+.green-block {
+    background-color: green;
+    width: 140px;
+    height: 70px;
+    top: 0;
+    left: 115px;
+    z-index: 1;
+}
+
+.blue-block {
+    background-color: blue;
+    width: 160px;
+    height: 70px;
+    top: 80px;
+    left: 2px;
+    z-index: 2; 
+}
+
+.lightblue-block {
+    background-color: lightblue;
+    width: 160px;
+    height: 70px;
+    top: 80px;
+    left: 220px;
+    z-index: 3;
+}

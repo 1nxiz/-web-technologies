@@ -1,0 +1,96 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body {
+    height: 100vh;
+    background-color: #f0f0f0;
+    position: relative;
+}
+header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+.horizontal-nav {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 300px;
+    height: 60px;
+    background-color: #797d7a;
+    overflow: hidden;
+}
+.nav-block {
+    display: grid;
+    place-items: center; 
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.nav-block.home {
+    background-color: #4caf50;
+}
+.nav-block:hover {
+    background-color: #a0a0a0;
+}
+.nav-block:active {
+    background-color: gray;
+}
+.nav-block img {
+    width: 24px;
+    height: 24px;
+}
+.popup {
+    position: fixed;
+    top: 60px;
+    left: -250px;
+    width: 250px;
+    height: calc(100% - 60px);
+    background-color: rgb(9, 28, 170);
+    overflow-y: auto;
+    transition: left 0.3s ease;
+    z-index: 999;
+}
+.popup-content {
+    padding: 20px;
+}
+.popup-content ul {
+    list-style-type: none;
+}
+.popup-content a {
+    display: block;
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+.popup-content a:hover {
+    background-color: #457ee8;
+}
+.submenu {
+    padding-left: 20px;
+    display: none;
+}
+.menu-item:hover .submenu {
+    display: block;
+}
+#popup-toggle {
+    display: none;
+}
+#popup-toggle:checked ~ .popup {
+    left: 0;
+}
+#popup-toggle a:hover {
+    display: block;
+}
+.popup-overlay {
+    display: none;
+    position: fixed;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    height: calc(100% - 60px);
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 998;
+}
