@@ -1,0 +1,56 @@
+.pyramid {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 8px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.pyramid-block {
+    background-color: #FFD700;
+    border-radius: 4px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.25rem;
+    font-weight: bold;
+    min-height: 40px;
+    transition: background-color 0.3s ease;
+}
+
+.pyramid-block:hover {
+    background-color: #FFC000;
+}
+
+
+.pyramid-block:nth-child(1) {
+    grid-column: span 12;
+}
+
+
+.pyramid-block:nth-child(2),
+.pyramid-block:nth-child(3) {
+    grid-column: span 6;
+}
+
+
+.pyramid-block:nth-child(n+4):nth-child(-n+6) {
+    grid-column: span 4;
+}
+
+
+.pyramid-block:nth-child(n+7):nth-child(-n+10) {
+    grid-column: span 3;
+}
+
+
+.pyramid-block:nth-child(n+11):nth-child(-n+16) {
+    grid-column: span 2;
+}
+
+
+.pyramid-block:nth-child(n+17):nth-child(-n+28) {
+    grid-column: span 1;
+}
