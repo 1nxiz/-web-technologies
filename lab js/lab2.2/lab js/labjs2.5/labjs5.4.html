@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        input, button {
+            margin: 5px;
+            padding: 8px;
+        }
+        #output {
+            margin-top: 20px;
+            border: 1px solid #ddd;
+            padding: 10px;
+            min-height: 100px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+    <h1>Управління інтернет-магазином</h1>
+
+    <div>
+        <h2>Додати продукт</h2>
+        <input type="text" id="productId" placeholder="ID продукту">
+        <input type="text" id="productName" placeholder="Назва продукту">
+        <input type="number" id="productPrice" placeholder="Ціна">
+        <input type="number" id="productQuantity" placeholder="Кількість">
+        <button onclick="addProduct()">Додати</button>
+    </div>
+
+    <div>
+        <h2>Оновити продукт</h2>
+        <input type="text" id="updateId" placeholder="ID продукту">
+        <input type="number" id="updatePrice" placeholder="Нова ціна">
+        <input type="number" id="updateQuantity" placeholder="Нова кількість">
+        <button onclick="updateProduct()">Оновити</button>
+    </div>
+
+    <div>
+        <h2>Видалити продукт</h2>
+        <input type="text" id="deleteId" placeholder="ID продукту">
+        <button onclick="deleteProduct()">Видалити</button>
+    </div>
+
+    <div>
+        <h2>Пошук продукту</h2>
+        <input type="text" id="searchName" placeholder="Назва продукту">
+        <button onclick="searchProduct()">Шукати</button>
+    </div>
+
+    <div>
+        <h2>Замовлення</h2>
+        <input type="text" id="orderProductId" placeholder="ID продукту">
+        <input type="number" id="orderQuantity" placeholder="Кількість">
+        <button onclick="placeOrder()">Замовити</button>
+    </div>
+
+    <div id="output"></div>
+
+    <div>
+        <h2>Каталог продуктів</h2>
+        <table id="productTable">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Назва</th>
+                    <th>Ціна</th>
+                    <th>Кількість</th>
+                </tr>
+            </thead>
+            <tbody id="productList"></tbody>
+        </table>
+    </div>
+    
+    <script src="labjs5.4.js"></script>
+</body>
+</html>

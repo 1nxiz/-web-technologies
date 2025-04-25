@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Список завдань</title>
+    <link rel="stylesheet" href="lab6.2.css">
+</head>
+<body>
+    <div class="container">
+        <div class="todo-header">
+            <h1>Список завдань</h1>
+            <form id="todo-form" class="todo-form">
+                <input 
+                    type="text" 
+                    id="todo-input" 
+                    class="todo-input" 
+                    placeholder="Введіть нове завдання..."
+                    required
+                    minlength="3"
+                    maxlength="100"
+                >
+                <button type="submit" class="btn">Додати</button>
+            </form>
+        </div>
+        
+        <div class="filter-controls">
+            <div class="filter-group">
+                <button class="filter-btn active" data-filter="all">Всі</button>
+                <button class="filter-btn" data-filter="active">Активні</button>
+                <button class="filter-btn" data-filter="completed">Завершені</button>
+            </div>
+            
+            <div class="filter-group">
+                <button class="filter-btn active" data-sort="createdDate">За датою створення</button>
+                <button class="filter-btn" data-sort="updatedDate">За датою оновлення</button>
+                <button class="filter-btn" data-sort="status">За статусом</button>
+            </div>
+        </div>
+        
+        <ul id="todo-list" class="todo-list">
+        </ul>
+    </div>
+    
+    <div id="snackbar" class="snackbar"></div>
+    
+    <div id="confirm-modal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 class="modal-title">Підтвердження</h2>
+                <span class="modal-close">&times;</span>
+            </div>
+            <div class="modal-body">
+                <p>Ви впевнені, що хочете видалити це завдання?</p>
+            </div>
+            <div class="modal-footer">
+                <button class="btn" id="cancel-btn" style="background-color: var(--gray-color);">Скасувати</button>
+                <button class="btn" id="confirm-btn" style="background-color: var(--danger-color);">Видалити</button>
+            </div>
+        </div>
+    </div>
+    
+    <script src="lab6.2.js"></script>
+</body>
+</html>

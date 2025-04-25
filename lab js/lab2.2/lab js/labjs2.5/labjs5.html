@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Лампочка</title>
+    <style>
+        .bulb {
+            width: 100px;
+            height: 150px;
+            background-size: cover;
+            display: block;
+            margin: 20px auto;
+        }
+        .off.normal {
+            background-image: url('img/vector-isolated-realistic-light-bulb-white_1284-41931.avif');
+        }
+        .on.normal {
+            background-image: url('img/images.jpg');
+        }
+        .off.eco {
+            background-image: url('img/png-transparent-angle-energy-saving-light-bulbs-thumbnail.png');
+        }
+        .on.eco {
+            background-image: url('img/images 1.jpg');
+        }
+        .off.led {
+            background-image: url('img/images3.jpg');
+        }
+        .on.led {
+            background-image: url('img/images2.jpg');
+        }
+        .brightness {
+            filter: brightness(100%);
+        }
+    </style>
+</head>
+<body>
+    <select id="bulbType">
+        <option value="normal">Звичайна лампочка</option>
+        <option value="eco">Енергозберігаюча лампочка</option>
+        <option value="led">Світлодіодна лампочка</option>
+    </select> 
+    <button id="toggleButton">Включити</button>
+    <button id="brightnessButton">Змінити яскравість</button> 
+    <div id="bulb" class="bulb off normal"></div>
+    
+    <script src="labjs5.js"></script>
+</body>
+</html>
