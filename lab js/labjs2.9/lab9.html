@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Authorization Form</title>
+    <link rel="stylesheet" href="lab9.css">
+</head>
+<body>
+    <div class="container">
+        <div class="loader">
+            <div class="spinner"></div>
+        </div>
+
+        <div class="tabs">
+            <div class="tab active" data-tab="login">Вхід</div>
+            <div class="tab" data-tab="register">Реєстрація</div>
+        </div>
+
+        <div class="form-container">
+            <form id="loginForm" class="form active">
+                <h2 class="form-title">Увійти в обліковий запис</h2>
+                
+                <div class="form-group">
+                    <label for="loginUsername">Username</label>
+                    <input type="text" class="form-control" id="loginUsername" name="username" placeholder="Введіть ваш username">
+                    <div class="error-message" id="loginUsernameError"></div>
+                </div>
+
+                <div class="form-group">
+                    <label for="loginPassword">Password</label>
+                    <input type="password" class="form-control" id="loginPassword" name="password" placeholder="Введіть ваш пароль">
+                    <span class="password-toggle" data-for="loginPassword">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
+                        </svg>
+                    </span>
+                    <div class="error-message" id="loginPasswordError"></div>
+                </div>
+
+                <div class="checkbox-group">
+                    <input type="checkbox" id="rememberMe" name="rememberMe">
+                    <label for="rememberMe">Remember Me</label>
+                </div>
+
+                <button type="submit" class="btn">Увійти</button>
+            </form>
+
+            <form id="registerForm" class="form">
+                <h2 class="form-title">Створити новий обліковий запис</h2>
+                
+                <div class="form-group">
+                    <label for="firstName">First Name</label>
+                    <input type="text" class="form-control" id="firstName" name="firstName" placeholder="Введіть ваше ім'я">
+                    <div class="error-message" id="firstNameError"></div>
+                </div>
+
+                <div class="form-group">
+                    <label for="lastName">Last Name</label>
+                    <input type="text" class="form-control" id="lastName" name="lastName" placeholder="Введіть ваше прізвище">
+                    <div class="error-message" id="lastNameError"></div>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" class="form-control" id="email" name="email" placeholder="Введіть вашу електронну пошту">
+                    <div class="error-message" id="emailError"></div>
+                </div>
+
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" class="form-control" id="password" name="password" placeholder="Створіть надійний пароль">
+                    <span class="password-toggle" data-for="password">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
+                        </svg>
+                    </span>
+                    <div class="error-message" id="passwordError"></div>
+                </div>
+
+                <div class="form-group">
+                    <label for="confirmPassword">Confirm Password</label>
+                    <input type="password" class="form-control" id="confirmPassword" name="confirmPassword" placeholder="Підтвердіть пароль">
+                    <span class="password-toggle" data-for="confirmPassword">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
+                        </svg>
+                    </span>
+                    <div class="error-message" id="confirmPasswordError"></div>
+                </div>
+
+                <div class="form-group">
+                    <label for="phone">Phone</label>
+                    <input type="tel" class="form-control" id="phone" name="phone" placeholder="+380XXXXXXXXX">
+                    <div class="error-message" id="phoneError"></div>
+                </div>
+
+                <div class="form-group">
+                    <label for="birthDate">Date Birth</label>
+                    <input type="date" class="form-control" id="birthDate" name="birthDate">
+                    <div class="error-message" id="birthDateError"></div>
+                </div>
+
+                <div class="form-group">
+                    <label>Sex</label>
+                    <div class="radio-group">
+                        <div class="radio-option">
+                            <input type="radio" id="male" name="sex" value="male">
+                            <label for="male">Male</label>
+                        </div>
+                        <div class="radio-option">
+                            <input type="radio" id="female" name="sex" value="female">
+                            <label for="female">Female</label>
+                        </div>
+                    </div>
+                    <div class="error-message" id="sexError"></div>
+                </div>
+
+                <div class="form-group">
+                    <label for="country">Country</label>
+                    <div class="select-wrapper">
+                        <select class="form-control" id="country" name="country">
+                            <option value="">Select Country</option>
+                            <option value="ukraine">Ukraine</option>
+                            <option value="poland">Poland</option>
+                            <option value="germany">Germany</option>
+                            <option value="usa">USA</option>
+                            <option value="canada">Canada</option>
+                        </select>
+                    </div>
+                    <div class="error-message" id="countryError"></div>
+                </div>
+
+                <div class="form-group">
+                    <label for="city">City</label>
+                    <div class="select-wrapper">
+                        <select class="form-control" id="city" name="city" disabled>
+                            <option value="">Select City</option>
+                        </select>
+                    </div>
+                    <div class="error-message" id="cityError"></div>
+                </div>
+
+                <button type="submit" class="btn">Зареєструватися</button>
+            </form>
+        </div>
+    </div>
+
+    <div class="message-container" id="messageContainer"></div>
+
+    <script src="lab9.js"></script>
+</body>
+</html>
